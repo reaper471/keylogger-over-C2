@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C2 Server Interface</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #0F0;
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #0F0;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0F0;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #0F0;
+            border-bottom: 2px solid #0F0;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #111;
+            border: 1px solid #333;
+        }
+
+        h2 {
+            color: #0F0;
+        }
+
+        input {
+            padding: 10px;
+            font-family: 'Courier New', monospace;
+            background-color: #222;
+            color: #0F0;
+            border: 1px solid #333;
+        }
+
+        footer {
+            background-color: #222;
+            padding: 1px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        p {
+            color: #0F0;
+        }
+    </style>
+    </head>
+    <body>
+        <h1>Agents: </h1>
+       
+            {%for i in ips %}
+            <h2>{{i}}</h2>
+            {% endfor %}
+       
+
+    </body>
+</html>
